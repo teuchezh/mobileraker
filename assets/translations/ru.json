@@ -1,311 +1,311 @@
 {
 	"components": {
 		"connection_watcher": {
-			"reconnect": "重新连接",
-			"server_starting": "服务器正在启动...",
-			"trying_connect": "正在尝试连接..."
+			"reconnect": "Переподключение",
+			"server_starting": "Запуск сервера...",
+			"trying_connect": "Попытка подключения ..."
 		},
 		"nav_drawer": {
 			"fetching_printers": "@:general.fetching printers...",
-			"footer": "帕特里克·施密特用❤️制作\n查看项目",
-			"manage_printers": "管理打印机",
-			"printer_settings": "打印机设置"
+			"footer": "Made with ❤️ by Patrick Schmidt\nCheckout the project's",
+			"manage_printers": "Manage Printers",
+			"printer_settings": "Printer Settings"
 		}
 	},
 	"dialogs": {
 		"create_folder": {
-			"label": "文件夹名称",
-			"title": "创建文件夹"
+			"label": "Folder Name",
+			"title": "Create Folder"
 		},
 		"delete_file": {
-			"description": "确认删除文件“{}”。"
+			"description": "Confirm deletion of file '{}'."
 		},
 		"delete_folder": {
-			"description": "文件夹中包含的所有文件也将被删除！\n\n确认删除文件夹“/{}”。",
-			"title": "你确定吗？"
+			"description": "All files contained in folder will be removed as well!\n\nConfirm deletion of folder '/{}'.",
+			"title": "Are you sure?"
 		},
 		"import_setting": {
-			"fetching": "正在获取来源...",
-			"fetching_error_sub": "确保其他机器已连接。",
-			"fetching_error_title": "无法获取设置！",
-			"select_source": "选择来源"
+			"fetching": "Fetching sources...",
+			"fetching_error_sub": "Ensure other machines are connected.",
+			"fetching_error_title": "Unable to fetch settings!",
+			"select_source": "Select Source"
 		},
 		"rename_file": {
-			"label": "文档名称",
-			"title": "重新命名文件"
+			"label": "File Name",
+			"title": "Rename File"
 		},
 		"rename_folder": {
-			"label": "文件夹名称",
-			"title": "重命名文件夹"
+			"label": "Folder Name",
+			"title": "Rename Folder"
 		}
 	},
 	"general": {
-		"add": "新增",
-		"connected": "已连接",
-		"create": "创建",
-		"fetching": "抓取",
-		"firmware": "固件",
-		"none": "没有",
-		"off": "关闭",
-		"remove": "去掉",
-		"rename": "改名",
-		"restart": "重新开始",
-		"resume": "恢复",
-		"set": "组",
-		"shutdown": "关掉",
-		"unknown": "未知",
-		"use": "采用"
+		"add": "Добавить",
+		"connected": "Подключено",
+		"create": "Создать",
+		"fetching": "Получение",
+		"firmware": "Прошивка",
+		"none": "Отсутствует",
+		"off": "Выкл",
+		"remove": "Удалить",
+		"rename": "Переименовать",
+		"restart": "Перезагрузка",
+		"resume": "Продолжить",
+		"set": "Установить",
+		"shutdown": "Выключение",
+		"unknown": "Неизвестно",
+		"use": "Использовать"
 	},
 	"klipper_state": {
-		"disconnected": "未连接",
-		"error": "错误",
-		"ready": "准备",
-		"shutdown": "关掉",
-		"starting": "开始"
+		"disconnected": "Disconnected",
+		"error": "Error",
+		"ready": "Ready",
+		"shutdown": "Shutdown",
+		"starting": "Starting"
 	},
 	"notifications": {
-		"channel_printer_grp": "打印机 {}",
+		"channel_printer_grp": "Printer {}",
 		"channels": {
 			"progress": {
-				"desc": "有关打印进度的通知。",
-				"name": "打印进度更新 - {}",
-				"title": " {}的打印进度"
+				"desc": "Notifications regarding the print progress.",
+				"name": "Print Progress Updates - {}",
+				"title": "Print progress of {}"
 			},
 			"status": {
-				"body_complete": "完成打印：“{}”",
-				"body_error": "打印文件时出错：“{}”",
-				"body_paused": "暂停打印文件：“{}”",
-				"body_printing": "开始打印文件：“{}”",
-				"desc": "有关打印状态的通知。",
-				"name": "打印状态更新 - {}",
-				"title": " {} 的打印状态已更改！"
+				"body_complete": "Finished printing: \"{}\"",
+				"body_error": "Error while printing file: \"{}\"",
+				"body_paused": "Paused printing file: \"{}\"",
+				"body_printing": "Started to print file: \"{}\"",
+				"desc": "Notifications regarding the print status.",
+				"name": "Print Status Updates - {}",
+				"title": "Print state of {} changed!"
 			}
 		}
 	},
 	"pages": {
 		"console": {
 			"command_input": {
-				"hint": "输入控制台命令"
+				"hint": "Введите команду"
 			},
 			"fetching_console": "@:general.fetching console entries...",
-			"no_entries": "未找到缓存的命令",
-			"title": "主机"
+			"no_entries": "Не найдены кэшированные команды",
+			"title": "Консоль"
 		},
 		"dashboard": {
 			"control": {
 				"extrude_card": {
-					"extrude": "挤出",
-					"extrude_len": "@:pages.dashboard.control.extrude_card.extrude length",
-					"retract": "收回",
-					"title": "挤出机"
+					"extrude": "Выдавить",
+					"extrude_len": "@:pages.dashboard.control.extrude_card.extrude длина",
+					"retract": "Втянуть",
+					"title": "Экструдер"
 				},
 				"fan_card": {
-					"part_fan": "部件风扇",
-					"static_fan_btn": "风扇",
+					"part_fan": "Part Fan",
+					"static_fan_btn": "Fan",
 					"title": {
-						"one": "风扇",
-						"other": "风扇",
-						"zero": "风扇"
+						"one": "Вентилятор",
+						"other": "Вентиляторы",
+						"zero": "Вентилятор"
 					}
 				},
 				"macro_card": {
-					"title": "Gcode - 宏"
+					"title": "Gcode - Макросы"
 				},
 				"multipl_card": {
-					"flow": "流量",
-					"title": "倍数器"
+					"flow": "Поток",
+					"title": "Множители"
 				},
 				"pin_card": {
-					"pin_btn": "引脚",
+					"pin_btn": "Pin",
 					"title": {
-						"one": "输出引脚",
-						"other": "输出引脚",
-						"two": "输出引脚",
-						"zero": "输出引脚"
+						"one": "Output Pin",
+						"other": "Output Pins",
+						"two": "Output Pins",
+						"zero": "Output Pin"
 					}
 				}
 			},
-			"ems_btn": "紧急停止",
+			"ems_btn": "Аварийное выключение",
 			"fetching_printer": "@:general.fetching printer...",
 			"general": {
 				"baby_step_card": {
-					"title": "Babystepping Z 轴"
+					"title": "Babystepping Z-Axis"
 				},
 				"cam_card": {
-					"fullscreen": "全屏",
-					"webcam": "摄像头"
+					"fullscreen": "Полноэкранный",
+					"webcam": "Веб-камера"
 				},
 				"move_card": {
-					"home_all_btn": "所有",
-					"home_all_tooltip": "归零所有轴",
-					"home_xy_tooltip": "原点 X 和 Y 轴",
-					"home_z_tooltip": "Z轴原点",
+					"home_all_btn": "Все",
+					"home_all_tooltip": "Парковка всех осей",
+					"home_xy_tooltip": "Парковка осей X и Y",
+					"home_z_tooltip": "Парковка оси Z",
 					"m84_btn": "M84",
-					"m84_tooltip": "禁用电机",
-					"mesh_btn": "网络",
-					"mesh_tooltip": "运行热床网络校准",
+					"m84_tooltip": "Отключить моторы",
+					"mesh_btn": "Сетка",
+					"mesh_tooltip": "Запуск калибровки Med-Mesh",
 					"qgl_btn": "QGL",
-					"qgl_tooltip": "运行四点调平",
-					"step_size": "步长",
-					"title": "移动轴"
+					"qgl_tooltip": "Run Quad-Gantry leveling",
+					"step_size": "Размер шага",
+					"title": "Движение Осей"
 				},
 				"print_card": {
-					"eta": "预计结束时间",
-					"layer": "层",
-					"printing_for": "打印：{}",
-					"reset": "重启",
-					"speed": "速度"
+					"eta": "ETA",
+					"layer": "Слой",
+					"printing_for": "Печать: {}",
+					"reset": "Сброс",
+					"speed": "Скорость"
 				},
-				"restart_klipper": "重启 Klipper",
-				"restart_mcu": "重启MCU",
+				"restart_klipper": "Перезагрузка Klipper",
+				"restart_mcu": "Перезагрузка MCU",
 				"temp_card": {
-					"bed": "床",
-					"btn_thermistor": "传感器",
-					"heater_on": "{} °C 目标",
-					"hotend": "加热端",
-					"presets_btn": "预设",
-					"sensors": "传感器",
-					"temp_presets": "温度预设",
-					"title": "温度控制"
+					"bed": "Стол",
+					"btn_thermistor": "Датчик",
+					"heater_on": "{} °C установленная",
+					"hotend": "Хотэнд",
+					"presets_btn": "Предустановки",
+					"sensors": "Датчики",
+					"temp_presets": "Предустановки температуры",
+					"title": "Управление Температурой"
 				},
 				"temp_preset_card": {
 					"b_temp": "@:pages.dashboard.general.temp_card.bed {}°C",
-					"cooloff": "冷却",
+					"cooloff": "Охлаждение",
 					"h_temp": "@:pages.dashboard.general.temp_card.hotend {}°C"
 				}
 			},
 			"server_status": {
-				"available": "服务器状态为 {} ，Klippy 为 {}",
-				"unavailable": "没有可用的服务器"
+				"available": "Состояние сервера {} и Klippy {}",
+				"unavailable": "Нет доступных серверов"
 			},
-			"title": "仪表板"
+			"title": "Панель"
 		},
 		"files": {
-			"clear_search": "清除搜寻",
+			"clear_search": "Очистить поиск",
 			"details": {
 				"general_card": {
-					"last_mod": "最后修改",
-					"last_printed": "最后印刷",
-					"no_data": "没有数据",
-					"path": "路径"
+					"last_mod": "Последнее изменение",
+					"last_printed": "Последняя печать",
+					"no_data": "Нет информации",
+					"path": "Путь"
 				},
 				"meta_card": {
-					"est_print_time": "预计打印时间",
-					"first_layer": "第一层",
-					"first_layer_temps": "@:pages.files.details.meta_card.first_layer - Temperatures",
-					"first_layer_temps_value": "@:pages.dashboard.general.temp_card.hotend： {}°C\n@:pages.dashboard.general.temp_card.bed： {}°C",
-					"layer_higher": "层高",
-					"others": "其他",
-					"slicer": "使用的切片软件",
-					"title": "GCode 元数据"
+					"est_print_time": "Расчетное время печати",
+					"first_layer": "Первый слой",
+					"first_layer_temps": "@:pages.files.details.meta_card.first_layer - Температуры",
+					"first_layer_temps_value": "@:pages.dashboard.general.temp_card.hotend: {}°C\n@:pages.dashboard.general.temp_card.bed: {}°C",
+					"layer_higher": "Высота слоя",
+					"others": "Прочее",
+					"slicer": "Использованный слайсер",
+					"title": "GCode Meta Data"
 				},
-				"preheat": "预热",
-				"print": "打印",
+				"preheat": "Преднагрев",
+				"print": "Печать",
 				"stat_card": {
-					"title": "统计"
+					"title": "Статистика"
 				}
 			},
 			"fetching_files": "@:general.fetching Files...",
-			"last_mod": "最后修改",
-			"last_printed": "最后打印",
-			"name": "名称",
-			"no_files_found": "没有找到文件！",
-			"search_files": "搜索文件",
-			"title": "档案"
+			"last_mod": "Последнее изменение",
+			"last_printed": "Последняя печать",
+			"name": "Имя",
+			"no_files_found": "No files found!",
+			"search_files": "Поиск файлов",
+			"title": "Файлы"
 		},
 		"overview": {
-			"add_machine": "添加机器",
+			"add_machine": "Add Machine",
 			"fetching_machines": "@:general.fetching machines...",
-			"no_entries": "没有找到机器",
-			"title": "概观"
+			"no_entries": "No machines found",
+			"title": "Overview"
 		},
 		"printer_add": {
-			"misc": "杂项",
-			"printer_add_helper": "主机、IP 或完整 URL",
-			"result_ws_test": "结果： {}",
-			"resulting_ws_url": "生成的 WebSocket-URL： {}",
-			"run_test_btn": "测试",
-			"test_ws": "测试 websocket 连接",
-			"title": "添加新打印机"
+			"misc": "Разное",
+			"printer_add_helper": "Хост, IP или полный URL",
+			"result_ws_test": "Результат: {}",
+			"resulting_ws_url": "Результирующий WebSocket-URL: {}",
+			"run_test_btn": "Тест",
+			"test_ws": "Проверка соединения по веб-сокету",
+			"title": "Добавить новый принтер"
 		},
 		"printer_edit": {
 			"cams": {
-				"default_addr": "默认地址",
-				"flip_horizontal": "水平翻转",
-				"flip_vertical": "垂直翻转",
-				"new_cam": "新的网络摄像头",
-				"no_webcams": "没有添加网络摄像头！",
-				"target_fps": "目标 FPS",
-				"webcam_addr": "网络摄像头 - 地址"
+				"default_addr": "Адрес по умолчанию",
+				"flip_horizontal": "Отобразить горизонтально",
+				"flip_vertical": "Отобразить вертикально",
+				"new_cam": "Новая веб-камера",
+				"no_webcams": "Нет добавленных веб-камер!",
+				"target_fps": "Установленный FPS",
+				"webcam_addr": "Веб-камера - Адрес"
 			},
-			"could_not_fetch_additional": "无法获取其他设置！",
+			"could_not_fetch_additional": "Не удалось получить дополнительные настройки!",
 			"extruders": {
-				"feedrate": "挤出机进料速度",
-				"feedrate_short": "进给速度",
-				"steps_extrude": "挤出步骤",
+				"feedrate": "Extruder feed rate",
+				"feedrate_short": "Feed rate",
+				"steps_extrude": "Extrude steps",
 				"steps_extrude_short": "@:pages.printer_edit.extruders.steps_extrude",
-				"title": "挤出机"
+				"title": "Extruder(s)"
 			},
-			"fetch_error_hint": "确保机器可访问，并且 Mobileraker 已连接到它。",
+			"fetch_error_hint": "Убедитесь, что машина доступна и к ней подключен Mobileraker.",
 			"fetching_additional_settings": "@:general.fetching additional settings from network...",
 			"general": {
-				"displayname": "显示名称",
-				"full_url": "完整网址",
-				"moonraker_api_desc": "仅当您使用受信任的客户端时才需要。 FluiddPI 强制执行此操作！",
-				"moonraker_api_key": "Moonraker - API 密钥",
-				"printer_addr": "打印机 - 地址",
-				"ws_addr": "Websocket - 地址"
+				"displayname": "Отображаемое имя",
+				"full_url": "Полный URL",
+				"moonraker_api_desc": "Требуется только в том случае, если вы используете доверенных клиентов. FluiddPI обеспечивает это!",
+				"moonraker_api_key": "Moonraker - API Ключ",
+				"printer_addr": "Принтер - Адрес",
+				"ws_addr": "Веб-сокет - Адрес"
 			},
-			"import_settings": "导入设置",
+			"import_settings": "Импорт настроек",
 			"macros": {
 				"macros_to_default": {
-					"one": "将一个宏移至默认组！",
-					"other": "将 {} 个宏移至默认组！",
-					"two": "将两个宏移至默认组！"
+					"one": "Moved one macro to default group!",
+					"other": "Moved {} macros to default group!",
+					"two": "Moved two macro to default group!"
 				},
-				"new_macro_grp": "新宏 - 组",
-				"no_macros_available": "没有可用的宏！",
-				"no_macros_found": "未找到宏！"
+				"new_macro_grp": "New Macro - Group",
+				"no_macros_available": "No Macros available!",
+				"no_macros_found": "No Macros found!"
 			},
 			"motion_system": {
-				"invert_x": "反转 X - 轴",
-				"invert_x_short": "反转 X",
-				"invert_y": "反转 Y - 轴",
-				"invert_y_short": "反转 Y",
-				"invert_z": "反转 Z - 轴",
-				"invert_z_short": "反转 Z",
-				"speed_xy": "速度 X/Y - 轴",
-				"speed_xy_short": "速度 X/Y",
-				"speed_z": "速度 Z - 轴",
-				"speed_z_short": "速度 Z",
-				"steps_baby": "Babystepping Z 步",
+				"invert_x": "Инвертировать ось - X",
+				"invert_x_short": "Инвертировать X",
+				"invert_y": "Инвертировать ось - Y",
+				"invert_y_short": "Инвертировать Y",
+				"invert_z": "Инвертировать ось - Z ",
+				"invert_z_short": "Инвертировать Z",
+				"speed_xy": "Скоровть осей - X/Y",
+				"speed_xy_short": "Скорость X/Y",
+				"speed_z": "Скрость оси - Z",
+				"speed_z_short": "Скорость Z",
+				"steps_baby": "Babystepping Z-steps",
 				"steps_baby_short": "Baby Steps",
-				"steps_move": "移动步骤",
+				"steps_move": "Шаги перемещения",
 				"steps_move_short": "@:pages.printer_edit.motion_system.steps_move",
-				"title": "运动系统"
+				"title": "Система движения"
 			},
-			"no_values_found": "未找到任何值！",
+			"no_values_found": "Значения не найдены!",
 			"presets": {
-				"bed_temp": "@:pages.dashboard.general.temp_card.bed Temperature",
-				"hotend_temp": "@:pages.dashboard.general.temp_card.hotend Temperature",
-				"new_preset": "新预设",
-				"no_presets": "没有添加预设！"
+				"bed_temp": "@:pages.dashboard.general.temp_card.bed Температура",
+				"hotend_temp": "@:pages.dashboard.general.temp_card.hotend Температура",
+				"new_preset": "Новая предустановка",
+				"no_presets": "Нет добавленных предустановок!"
 			},
-			"remove_printer": "移除打印机",
-			"title": "编辑 {}"
+			"remove_printer": "Удалить принтер",
+			"title": "Редактировать {}"
 		},
 		"setting": {
 			"general": {
-				"always_baby": "始终显示 Babystepping Card",
-				"companion": "了解如何在其上设置 Mobileraker 的 Companion",
-				"ems_confirm": "确认紧急停止",
-				"language": "语言",
-				"num_edit": "使用键盘输入数字",
-				"start_with_overview": "Show @:pages.overview.title by default",
-				"title": "一般"
+				"always_baby": "Always show Babystepping Card",
+				"companion": "Хотите получать удаленные уведомления?\nПрочтите как настроить Mobileraker's Companion ",
+				"ems_confirm": "Подтверждение Аварийной остановки",
+				"language": "Язык",
+				"num_edit": "Использовать клавиатуру для ввода чисел",
+				"start_with_overview": "Показать @:pages.overview.title по умолчанию",
+				"title": "Основное"
 			},
-			"imprint": "隐私/印象",
-			"title": "应用程序 - 设置"
+			"imprint": "Конфиденциальность/Выходные данные",
+			"title": "Настройки приложения"
 		}
 	}
 }
