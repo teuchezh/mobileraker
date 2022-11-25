@@ -1,109 +1,108 @@
 {
   "general": {
-    "resume": "Продолжить",
-    "connected": "Подключено",
-    "off": "Выкл",
-    "on": "Вкл",
-    "none": "Отсутствует",
-    "add": "Добавить",
-    "create": "Создать",
-    "rename": "Переименовать",
-    "remove": "Удалить",
-    "set": "Установить",
-    "use": "Использовать",
-    "restart": "Перезагрузка",
-    "shutdown": "Выключение",
-    "firmware": "Прошивка",
-    "fetching": "Получение",
-    "unknown": "Неизвестно",
-    "disabled": "Выключено",
-    "confirm": "Подтвердить"
+    "resume": "Resume",
+    "connected": "Connected",
+    "off": "Off",
+    "on": "On",
+    "none": "None",
+    "add": "Add",
+    "create": "Create",
+    "rename": "Rename",
+    "remove": "Remove",
+    "set": "Set",
+    "use": "Use",
+    "restart": "Restart",
+    "shutdown": "Shutdown",
+    "firmware": "Firmware",
+    "fetching": "Fetching",
+    "unknown": "Unknown",
+    "disabled": "Disabled",
+    "confirm": "Confirm"
   },
   "pages": {
     "dashboard": {
-      "title": "Панель",
-      "ems_btn": "Аварийное выключение",
+      "title": "Dashboard",
+      "ems_btn": "Emergency-Stop",
       "server_status": {
-        "unavailable": "Нет доступных серверов",
-        "available": "Состояние сервера {} и Klippy {}"
+        "unavailable": "No Server available",
+        "available": "Server State is {} and Klippy is {}"
       },
       "fetching_printer": "@:general.fetching printer...",
       "general": {
         "print_card": {
-          "reset": "Сброс",
-          "printing_for": "Печать: {}",
-          "speed": "Скорость",
-          "layer": "Слой",
+          "reset": "Reset",
+          "printing_for": "Printing: {}",
+          "speed": "Speed",
+          "layer": "Layer",
           "eta": "ETA",
-          "current_object": "Текущий объект",
-          "elapsed": "Прошло",
-          "flow": "Поток",
-          "filament": "Филамент",
-          "filament_used": "Использовано {} % Филамента, т.е {} m из {} m прогнозированного."
-
+          "current_object": "Current Object",
+          "elapsed": "Elapsed",
+          "flow": "Flow",
+          "filament": "Filament",
+          "filament_used": "Used {} % of Filament, that is {} m of the {} m predicted."
         },
         "cam_card": {
-          "webcam": "Веб-камера",
-          "fullscreen": "Полноэкранный"
+          "webcam": "Webcam",
+          "fullscreen": "Fullscreen"
         },
         "temp_card": {
-          "title": "Управление Температурой",
-          "presets_btn": "Предустановки",
-          "hotend": "Хотэнд",
-          "bed": "Стол",
-          "temp_presets": "Предустановки температуры",
-          "sensors": "Датчики",
-          "heater_on": "{} °C установленная",
-          "btn_thermistor": "Датчик"
+          "title": "Temperature Controls",
+          "presets_btn": "Presets",
+          "hotend": "Hotend",
+          "bed": "Bed",
+          "temp_presets": "Temperature presets",
+          "sensors": "Sensors",
+          "heater_on": "{} °C target",
+          "btn_thermistor": "Sensor"
         },
         "temp_preset_card": {
-          "cooloff": "Охлаждение",
+          "cooloff": "Cooloff",
           "h_temp": "@:pages.dashboard.general.temp_card.hotend {}°C",
           "b_temp": "@:pages.dashboard.general.temp_card.bed {}°C"
         },
         "move_card": {
-          "title": "Движение Осей",
-          "home_xy_tooltip": "Парковка осей X и Y",
-          "home_z_tooltip": "Парковка оси Z",
-          "home_all_tooltip": "Парковка всех осей",
-          "home_all_btn": "Все",
+          "title": "Move Axis",
+          "home_xy_tooltip": "Home X and Y axis",
+          "home_z_tooltip": "Home Z axis",
+          "home_all_tooltip": "Home all axis",
+          "home_all_btn": "All",
           "qgl_tooltip": "Run Quad-Gantry leveling",
           "qgl_btn": "QGL",
-          "mesh_tooltip": "Запуск калибровки Med-Mesh",
-          "mesh_btn": "Сетка",
-          "m84_tooltip": "Отключить моторы",
+          "mesh_tooltip": "Run Med-Mesh calibration",
+          "mesh_btn": "Mesh",
+          "m84_tooltip": "Disable Motors",
           "m84_btn": "M84",
-          "step_size": "Размер шага",
+          "step_size": "Step size",
           "stc_tooltip": "Run Screws-Tilt calculation",
           "stc_btn": "STC",
-          "ztilt_tooltip": "Запуск Z-Tilt калибровки",
+          "ztilt_tooltip": "Run Z-Tilt calibration",
           "ztilt_btn": "zTilt"
         },
         "baby_step_card": {
           "title": "Babystepping Z-Axis"
         },
-        "restart_klipper": "Перезагрузка Klipper",
-        "restart_mcu": "Перезагрузка MCU"
+        "restart_klipper": "Restart Klipper",
+        "restart_mcu": "Restart MCU"
       },
       "control": {
         "fan_card": {
           "title": {
-            "zero": "Вентилятор",
-            "one": "Вентилятор",
-            "other": "Вентиляторы"
+            "zero": "Fan",
+            "one": "Fan",
+            "other": "Fans"
           },
           "part_fan": "Part Fan",
           "static_fan_btn": "Fan"
         },
         "extrude_card": {
-          "title": "Экструдер",
-          "extrude": "Выдавить",
-          "retract": "Втянуть",
-          "extrude_len": "@:pages.dashboard.control.extrude_card.extrude длина",
-          "cold_extrude_error": "Экструдер не достиг min_extrude_temp из {}°C!"
+          "title": "Extruder",
+          "extrude": "Extrude",
+          "retract": "Retract",
+          "extrude_len": "@:pages.dashboard.control.extrude_card.extrude length",
+          "cold_extrude_error": "Extruder did not reach min_extrude_temp of {}°C yet!"
         },
         "macro_card": {
-          "title": "Gcode - Макросы"
+          "title": "Gcode - Macros"
         },
         "pin_card": {
           "title": {
@@ -115,122 +114,122 @@
           "pin_btn": "Pin"
         },
         "power_card": {
-          "title": "Панель питания",
+          "title": "Power Panel",
           "pin_btn": "Pin"
         },
         "multipl_card": {
-          "title": "Множители",
-          "flow": "Поток",
+          "title": "Multipliers",
+          "flow": "Flow",
           "press_adv": "Pressure Advance",
-          "smooth_time": "Время сглаживания"
+          "smooth_time": "Smooth Time"
         },
         "limit_card": {
-          "title": "Лимиты",
-          "velocity": "Скорость",
-          "accel": "Ускорение",
-          "sq_corn_vel": "Угловая Скорость",
-          "accel_to_decel": "Ускорение до замедления"
+          "title": "Limits",
+          "velocity": "Velocity",
+          "accel": "Acceleration",
+          "sq_corn_vel": "Square Corner Velocity",
+          "accel_to_decel": "Accel to Decel"
         }
       }
     },
     "files": {
-      "title": "Файлы",
-      "search_files": "Поиск файлов",
-      "clear_search": "Очистить поиск",
-      "name": "Имя",
-      "last_mod": "Последнее изменение",
-      "last_printed": "Последняя печать",
+      "title": "Files",
+      "search_files": "Search files",
+      "clear_search": "Clear search",
+      "name": "Name",
+      "last_mod": "Last modified",
+      "last_printed": "Last printed",
       "fetching_files": "@:general.fetching Files...",
       "no_files_found": "No files found!",
       "details": {
-        "preheat": "Преднагрев",
-        "print": "Печать",
+        "preheat": "Preheat",
+        "print": "Print",
         "general_card": {
-          "path": "Путь",
-          "last_mod": "Последнее изменение",
-          "last_printed": "Последняя печать",
-          "no_data": "Нет информации"
+          "path": "Path",
+          "last_mod": "Last Modified",
+          "last_printed": "Last Printed",
+          "no_data": "No data"
         },
         "meta_card": {
           "title": "GCode Meta Data",
-          "filament": "Филамент",
-          "filament_type": "Тип филамента",
-          "filament_name": "Имя филамента",
-          "est_print_time": "Расчетное время печати",
-          "slicer": "Использованный слайсер",
-          "nozzle_diameter": "Диаметр сопла",
-          "layer_higher": "Высота слоя",
-          "first_layer": "Первый слой",
-          "others": "Прочее",
-          "first_layer_temps": "@:pages.files.details.meta_card.first_layer - Температуры",
+          "filament": "Filament",
+          "filament_type": "Filament Type",
+          "filament_name": "Filament Name",
+          "est_print_time": "Estimated Print Time",
+          "slicer": "Used Slicer",
+          "nozzle_diameter": "Nozzle Diameter",
+          "layer_higher": "Layer Height",
+          "first_layer": "First Layer",
+          "others": "Others",
+          "first_layer_temps": "@:pages.files.details.meta_card.first_layer - Temperatures",
           "first_layer_temps_value": "@:pages.dashboard.general.temp_card.hotend: {}°C\n@:pages.dashboard.general.temp_card.bed: {}°C"
         },
         "stat_card": {
-          "title": "Статистика"
+          "title": "Statistics"
         },
         "preheat_dialog": {
           "title": "@:pages.files.details.preheat ?",
-          "body": "Установленные Температуры\nЭкструдер: {}°C\nКровать: {}°C"
+          "body": "Target Temperatures\nExtruder: {}°C\nBed: {}°C"
         },
         "preheat_snackbar": {
-          "title": "Начат преднагрев",
-          "body": "Экструдер: {}°C\nСтол: {}°C"
+          "title": "Started Preheating",
+          "body": "Extruder: {}°C\nBed: {}°C"
         }
       }
     },
     "setting": {
-      "title": "Настройки приложения",
+      "title": "App - Settings",
       "general": {
-        "title": "Основное",
-        "ems_confirm": "Подтверждение Аварийной остановки",
+        "title": "General",
+        "ems_confirm": "Confirm Emergency-Stop",
         "always_baby": "Always show Babystepping Card",
-        "num_edit": "Использовать клавиатуру для ввода чисел",
-        "start_with_overview": "Показать @:pages.overview.title по умолчанию",
-        "use_offset_pos": "Показать координаты с примененным смещением.",
-        "language": "Язык",
-        "companion": "Хотите получать удаленные уведомления?\nПрочтите как настроить Mobileraker's Companion "
+        "num_edit": "Use keyboard for number input",
+        "start_with_overview": "Show @:pages.overview.title by default",
+        "use_offset_pos": "Show coordinates with offset applied.",
+        "language": "Language",
+        "companion": "Want to receive remote notification?\nLearn how to setup Mobileraker's Companion on its "
       },
       "notification": {
-        "title": "Уведомления",
-        "progress_label": "Уведомления о ходе печати",
-        "progress_helper": "Интервал обновления для уведомления о ходе печати",
-        "no_permission_title": "Нет разрешения на уведомления!",
-        "no_permission_desc": "Не возможно отобразить уведомления.\nЗапрос разрешения по нажатию!",
-        "ios_notifications_title": "Доставка уведомлений на IOS",
-        "ios_notifications_desc": "Уведомления требуют, чтобы mobileraker был открыт хотя бы один раз и работал в фоновом режиме..\nТем не менее, некоторые уведомления могут быть заблокированы ОС.!"
+        "title": "Notification",
+        "progress_label": "Progress Notification",
+        "progress_helper": "Update interval for print progress notification",
+        "no_permission_title": "No Notification Permission!",
+        "no_permission_desc": "Can not display notifications.\nRequest permission by clicking!",
+        "ios_notifications_title": "IOS Notification Delivery",
+        "ios_notifications_desc": "Notifications require mobileraker to be opened at least once and be in the background.\nStill some notifications might be blocked by the OS!"
       },
-      "imprint": "Конфиденциальность/Выходные данные"
+      "imprint": "Privacy/Impressum"
     },
     "printer_edit": {
-      "title": "Редактировать {}",
-      "import_settings": "Импорт настроек",
-      "remove_printer": "Удалить принтер",
-      "no_values_found": "Значения не найдены!",
+      "title": "Edit {}",
+      "import_settings": "Import Settings",
+      "remove_printer": "Remove Printer",
+      "no_values_found": "No values Found!",
       "fetching_additional_settings": "@:general.fetching additional settings from network...",
-      "could_not_fetch_additional": "Не удалось получить дополнительные настройки!",
-      "fetch_error_hint": "Убедитесь, что машина доступна и к ней подключен Mobileraker.",
+      "could_not_fetch_additional": "Could not fetch additional settings!",
+      "fetch_error_hint": "Ensure the machine is reachable, and Mobileraker is connected to it.",
       "general": {
-        "displayname": "Отображаемое имя",
-        "printer_addr": "Принтер - Адрес",
-        "ws_addr": "Веб-сокет - Адрес",
-        "moonraker_api_key": "Moonraker - API Ключ",
-        "moonraker_api_desc": "Требуется только в том случае, если вы используете доверенных клиентов. FluiddPI обеспечивает это!",
-        "full_url": "Полный URL",
-        "self_signed": "Доверять самоподписанным сертификатам"
+        "displayname": "Displayname",
+        "printer_addr": "Printer - Address",
+        "ws_addr": "Websocket - Address",
+        "moonraker_api_key": "Moonraker - API Key",
+        "moonraker_api_desc": "Only needed if youre using trusted clients. FluiddPI enforces this!",
+        "full_url": "Full URL",
+        "self_signed": "Trust Self-Signed Certificates"
       },
       "motion_system": {
-        "title": "Система движения",
-        "invert_x": "Инвертировать ось - X",
-        "invert_x_short": "Инвертировать X",
-        "invert_y": "Инвертировать ось - Y",
-        "invert_y_short": "Инвертировать Y",
-        "invert_z": "Инвертировать ось - Z ",
-        "invert_z_short": "Инвертировать Z",
-        "speed_xy": "Скоровть осей - X/Y",
-        "speed_xy_short": "Скорость X/Y",
-        "speed_z": "Скрость оси - Z",
-        "speed_z_short": "Скорость Z",
-        "steps_move": "Шаги перемещения",
+        "title": "Motion System",
+        "invert_x": "Invert X - Axis",
+        "invert_x_short": "Invert X",
+        "invert_y": "Invert Y - Axis",
+        "invert_y_short": "Invert Y",
+        "invert_z": "Invert Z - Axis",
+        "invert_z_short": "Invert Z",
+        "speed_xy": "Speed X/Y - Axis",
+        "speed_xy_short": "Speed X/Y",
+        "speed_z": "Speed Z - Axis",
+        "speed_z_short": "Speed Z",
+        "steps_move": "Move steps",
         "steps_move_short": "@:pages.printer_edit.motion_system.steps_move",
         "steps_baby": "Babystepping Z-steps",
         "steps_baby_short": "Baby Steps"
@@ -243,14 +242,14 @@
         "steps_extrude_short": "@:pages.printer_edit.extruders.steps_extrude"
       },
       "cams": {
-        "target_fps": "Установленный FPS",
-        "new_cam": "Новая веб-камера",
-        "no_webcams": "Нет добавленных веб-камер!",
-        "webcam_addr": "Веб-камера - Адрес",
-        "default_addr": "Адрес по умолчанию",
-        "flip_vertical": "Отобразить вертикально",
-        "flip_horizontal": "Отобразить горизонтально",
-        "cam_mode": "Режим камеры"
+        "target_fps": "Target FPS",
+        "new_cam": "New Webcam",
+        "no_webcams": "No Webcams added!",
+        "webcam_addr": "Webcam - Address",
+        "default_addr": "Default Address",
+        "flip_vertical": "Flip vertical",
+        "flip_horizontal": "Flip horizontal",
+        "cam_mode": "Cam Mode"
       },
       "macros": {
         "new_macro_grp": "New Macro - Group",
@@ -263,27 +262,27 @@
         }
       },
       "presets": {
-        "no_presets": "Нет добавленных предустановок!",
-        "hotend_temp": "@:pages.dashboard.general.temp_card.hotend Температура",
-        "bed_temp": "@:pages.dashboard.general.temp_card.bed Температура",
-        "new_preset": "Новая предустановка"
+        "no_presets": "No Presets added!",
+        "hotend_temp": "@:pages.dashboard.general.temp_card.hotend Temperature",
+        "bed_temp": "@:pages.dashboard.general.temp_card.bed Temperature",
+        "new_preset": "New Preset"
       }
     },
     "printer_add": {
-      "title": "Добавить новый принтер",
-      "printer_add_helper": "Хост, IP или полный URL",
-      "resulting_ws_url": "Результирующий WebSocket-URL: {}",
-      "misc": "Разное",
-      "test_ws": "Проверка соединения по веб-сокету",
-      "result_ws_test": "Результат: {}",
-      "run_test_btn": "Тест"
+      "title": "Add New Printer",
+      "printer_add_helper": "Host, IP, or full URL",
+      "resulting_ws_url": "Resulting WebSocket-URL: {}",
+      "misc": "Misc",
+      "test_ws": "Test websocket connection",
+      "result_ws_test": "Result: {}",
+      "run_test_btn": "Test"
     },
     "console": {
-      "title": "Консоль",
-      "no_entries": "Не найдены кэшированные команды",
+      "title": "Console",
+      "no_entries": "No cached commands found",
       "fetching_console": "@:general.fetching console entries...",
       "command_input": {
-        "hint": "Введите команду"
+        "hint": "Enter console command"
       }
     },
     "overview": {
@@ -295,7 +294,7 @@
   },
   "components": {
     "pull_to_refresh": {
-      "pull_up_idle" : "Потяните вверх, чтобы обновить"
+      "pull_up_idle": "Pull up to Refresh"
     },
     "nav_drawer": {
       "printer_settings": "Printer Settings",
@@ -304,9 +303,9 @@
       "footer": "Made with ❤️ by Patrick Schmidt\nCheckout the project's"
     },
     "connection_watcher": {
-      "reconnect": "Переподключение",
-      "trying_connect": "Попытка подключения ...",
-      "server_starting": "Запуск сервера..."
+      "reconnect": "Reconnect",
+      "trying_connect": "Trying to connect ...",
+      "server_starting": "Server is starting..."
     }
   },
   "dialogs": {
@@ -910,7 +909,7 @@
       },
       "ru": {
         "name": "Russian",
-        "nativeName": "Русский язык"
+        "nativeName": "русский язык"
       },
       "sa": {
         "name": "Sanskrit (Saṁskṛta)",
