@@ -587,6 +587,7 @@ pages:
       steps_extrude: Extrude steps
       steps_extrude_short: "@:pages.printer_edit.extruders.steps_extrude"
       filament:
+
         loading_distance: Extruder Nozzle Distance
         loading_distance_helper: Distance from the nozzle to the extruder. Used for
           (un)loading filament
@@ -597,6 +598,14 @@ pages:
         purge_amount_helper: Length of filament to purge
         purge_speed: Purge Speed
         purge_speed_helper: Speed for purging filament
+        mode:
+          title: Filament Change Mode
+          default: Default
+          custom: Custom
+        load_gcode: Filament Load G-Code
+        load_gcode_helper: G-Code to load filament
+        unload_gcode: Filament Unload G-Code
+        unload_gcode_helper: G-Code to unload filament
     cams:
       target_fps: Target FPS
       new_cam: New Webcam
