@@ -1,5 +1,14 @@
 # Mobileraker - Changelog
 
+## [2.9.6] - 2025-12-xx
+
+### Enhancements
+
+### Bug Fixes
+
+- **Fans Card**: Fixed an issue where the fans card would not display fans %-speed correctly when `max_power` was set to
+  a value other than 1.0.
+
 ## [2.9.5] - 2025-11-22
 
 ### Enhancements
