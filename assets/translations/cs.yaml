@@ -246,6 +246,15 @@ pages:
     editing_card:
       title: Režim úprav
       body: Nyní můžete přeuspořádat, přidat a odebrat karty a stránky. Všechny karty zobrazují náhledy dat.
+    rename_layout:
+      title: Přejmenovat rozložení
+      label: Název Rozložení
+    layout_rename_snack:
+      title: Rozložení přejmenováno!
+      body: Rozložení bylo úspěšně přejmenováno.
+    layout_reset_snack:
+      title: Rozložení resetováno!
+      body: Rozložení bylo obnoveno na výchozí konfiguraci.
     error_save_snack:
       title: Chyba při ukládání rozložení!
       body: Nastala chyba při ukládání rozvržení.
@@ -481,6 +490,18 @@ pages:
       no_devices_found: Nebyla nalezena žádná zařízení
       configure_btn: Konfigurace
       not_connected_btn: Nepřipojeno
+    data:
+      title: Import a Export dat
+      helper: Zálohovat nebo přenést data aplikace
+      export:
+        title: Exportovat data aplikace
+        helper: Uložte všechny své stroje, rozložení a nastavení do souboru pro zálohování nebo přenos
+      import:
+        title: Importovat data aplikace
+        helper: Načíst přístroje, rozložení a nastavení ze souboru
+      snack_imported:
+        title: Data byla importována!
+        message: Importováno {} strojů a {} rozložení.
     developer:
       title: Vývojář
       crashlytics: Povolit hlášení Crashlytics
@@ -553,6 +574,14 @@ pages:
         purge_amount_helper: Délka filamentu na čištění
         purge_speed: Rychlost čištění
         purge_speed_helper: Rychlost pro čištění vlákna
+        mode:
+          title: Režim změny filamentu
+          default: Výchozí
+          custom: Vlastní
+        load_gcode: G-Kód při zavádění filamentu
+        load_gcode_helper: G-Kód pro zavedení filamentu
+        unload_gcode: G-Kód při vytahování filamentu
+        unload_gcode_helper: G-Kód pro vytažení filamentu
     cams:
       target_fps: Cílové FPS
       new_cam: Nová Webkamera
@@ -1251,11 +1280,8 @@ dialogs:
           load:
             idle: Vložte vlákno do extruderu
             processing: Zavádění filamentu...
-            processed: Dosáhlo vlákno trysky? V případě potřeby opakujte.
           unload:
-            idle: Vytáhněte filament z extruderu
             processing: Vysouvání filamentu...
-            processed: Vyšlo vlákno z extrudéru? V případě potřeby opakujte.
       purge:
         title: Vyčistit filament
         subtitle:
@@ -1410,6 +1436,7 @@ bottom_sheets:
     available_layouts:
       label: 'Dostupné rozložení:'
       empty: Není k dispozici žádné rozložení
+      add_empty: Přidat nové rozložení
     layout_preview:
       not_saved: Neuloženo
     delete_layout:
@@ -1423,6 +1450,11 @@ bottom_sheets:
     falsy_import_snackbar:
       title: Chyba při importu rozložení!
       body: Rozložení nelze importovat. Ujistěte se, že schránka obsahuje platné rozložení.
+    load_layout_warning:
+      title: Načíst rozložení?
+      body: |-
+        Načítání rozložení přepíše aktuální rozložení hlavního panelu.
+        Všechny neuložené změny budou ztraceny.
   selections:
     no_selections:
       title: Nebyly nalezeny žádné výsledky

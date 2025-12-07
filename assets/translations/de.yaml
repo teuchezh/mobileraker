@@ -1276,7 +1276,7 @@ dialogs:
         title:
           load: Filament laden
           unload: Filament entladen
-          gcode:  Benutzerdefinierten G-Code ausführen
+          gcode: Benutzerdefinierten G-Code ausführen
         subtitle:
           load:
             idle: Filament in den Extruder einführen
