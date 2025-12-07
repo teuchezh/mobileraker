@@ -8,6 +8,8 @@
 
 - **Fans Card**: Fixed an issue where the fans card would not display fans %-speed correctly when `max_power` was set to
   a value other than 1.0.
+- **Console History Color**: Fixed an issue where the console history text color for responses was not correctly set in
+  light mode, resulting in poor visibility.
 
 ## [2.9.5] - 2025-11-22
 
