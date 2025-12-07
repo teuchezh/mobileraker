@@ -8,6 +8,9 @@
   during filament loading and unloading operations, replacing Mobileraker's default sequences with their own
   printer-specific commands when using the filament load/unload wizards.
 
+- **Fab with Keyboard**: The floating action button (FAB) on the dashboard page now hides when the keyboard is open, preventing
+  obstruction of input fields and enhancing user experience during text entry.
+
 ### Bug Fixes
 
 - **Fans Card**: Fixed an issue where the fans card would not display fans %-speed correctly when `max_power` was set to
