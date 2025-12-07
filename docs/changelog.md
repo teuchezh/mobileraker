@@ -4,6 +4,10 @@
 
 ### Enhancements
 
+- **Custom Load/Unload Sequences**: Users can now configure custom G-Code sequences in machine settings to execute
+  during filament loading and unloading operations, replacing Mobileraker's default sequences with their own
+  printer-specific commands when using the filament load/unload wizards.
+
 ### Bug Fixes
 
 - **Fans Card**: Fixed an issue where the fans card would not display fans %-speed correctly when `max_power` was set to
