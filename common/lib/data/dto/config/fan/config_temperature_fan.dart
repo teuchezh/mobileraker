@@ -3,7 +3,7 @@
  * All rights reserved.
  */
 
-import 'package:common/data/converters/integer_converter.dart';
+import 'package:common/data/converters/string_integer_converter.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 
 import 'config_fan.dart';
@@ -25,7 +25,7 @@ class ConfigTemperatureFan extends ConfigFan with _$ConfigTemperatureFan {
     @JsonKey(name: 'kick_start_time') @Default(0.100) double kickStartTime,
     @JsonKey(name: 'off_below') @Default(0) double offBelow,
     @JsonKey(name: 'tachometer_pin') String? tachometerPin,
-    @IntegerConverter() @JsonKey(name: 'tachometer_ppr') @Default(2) int? tachometerPpr,
+    @StringIntegerConverter() @JsonKey(name: 'tachometer_ppr') @Default(2) int? tachometerPpr,
     @JsonKey(name: 'tachometer_poll_interval') @Default(0.0015) double? tachometerPollInterval,
     @JsonKey(name: 'enable_pin') String? enablePin,
     @JsonKey(name: 'min_temp') @Default(0) double minTemp,

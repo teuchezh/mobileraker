@@ -3,7 +3,7 @@
  * All rights reserved.
  */
 
-import 'package:common/data/converters/integer_converter.dart';
+import 'package:common/data/converters/string_integer_converter.dart';
 import 'package:common/util/extensions/list_extension.dart';
 import 'package:flutter/foundation.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
@@ -21,11 +21,11 @@ class ConfigStepper with _$ConfigStepper {
     required String stepPin,
     required String dirPin,
     String? enablePin,
-    @IntegerConverter() required int rotationDistance,
-    @IntegerConverter()
+    @StringIntegerConverter() required int rotationDistance,
+    @StringIntegerConverter()
     int?
         microsteps, // In default klipper that is required. In favor of https://github.com/jbatonnet/Rinkhals/issues/133 , https://github.com/Clon1998/mobileraker/issues/505 I will make it optional!
-    @IntegerConverter() @Default(200) int fullStepsPerRotation,
+    @StringIntegerConverter() @Default(200) int fullStepsPerRotation,
     @Default([]) @JsonKey(fromJson: _unpackGearRatio) List<int> gearRatio,
     String? endstopPin,
     @Default(0) double positionMin,
