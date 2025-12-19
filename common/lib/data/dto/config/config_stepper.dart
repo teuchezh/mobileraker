@@ -3,6 +3,7 @@
  * All rights reserved.
  */
 
+import 'package:common/data/converters/string_double_converter.dart';
 import 'package:common/data/converters/string_integer_converter.dart';
 import 'package:common/util/extensions/list_extension.dart';
 import 'package:flutter/foundation.dart';
@@ -13,6 +14,8 @@ part 'config_stepper.g.dart';
 
 @freezed
 class ConfigStepper with _$ConfigStepper {
+  @StringIntegerConverter()
+  @StringDoubleConverter()
   @JsonSerializable(
     fieldRename: FieldRename.snake,
   )
@@ -21,11 +24,10 @@ class ConfigStepper with _$ConfigStepper {
     required String stepPin,
     required String dirPin,
     String? enablePin,
-    @StringIntegerConverter() required int rotationDistance,
-    @StringIntegerConverter()
+    required int rotationDistance,
     int?
         microsteps, // In default klipper that is required. In favor of https://github.com/jbatonnet/Rinkhals/issues/133 , https://github.com/Clon1998/mobileraker/issues/505 I will make it optional!
-    @StringIntegerConverter() @Default(200) int fullStepsPerRotation,
+    @Default(200) int fullStepsPerRotation,
     @Default([]) @JsonKey(fromJson: _unpackGearRatio) List<int> gearRatio,
     String? endstopPin,
     @Default(0) double positionMin,

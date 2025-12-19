@@ -14,9 +14,10 @@ part 'history_params.g.dart';
 
 @freezed
 class HistoryParams with _$HistoryParams {
+  @StringIntegerConverter()
   const factory HistoryParams({
-    @StringIntegerConverter() required int start, // Record number to start from (i.e. 10 would start at the 10th print)
-    @StringIntegerConverter() required int limit, // Maximum Number of prints to return (default: 50)
+    required int start, // Record number to start from (i.e. 10 would start at the 10th print)
+    required int limit, // Maximum Number of prints to return (default: 50)
     @UnixDateTimeConverter() required DateTime? since, // All jobs after this UNIX timestamp
     @UnixDateTimeConverter() required DateTime? before, // All jobs before this UNIX timestamp
     required SortKind order, // Define return order asc or desc (default)

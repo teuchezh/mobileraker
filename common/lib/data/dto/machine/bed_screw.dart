@@ -20,11 +20,12 @@ enum BedScrewMode { adjust, fine }
 
 @freezed
 class BedScrew with _$BedScrew {
+  @StringIntegerConverter()
   const factory BedScrew({
     @JsonKey(name: 'is_active') @Default(false) bool isActive,
     BedScrewMode? state,
-    @StringIntegerConverter() @JsonKey(name: 'accepted_screws') @Default(0) int acceptedScrews,
-    @StringIntegerConverter() @JsonKey(name: 'current_screw') @Default(0) int currentScrew,
+    @JsonKey(name: 'accepted_screws') @Default(0) int acceptedScrews,
+    @JsonKey(name: 'current_screw') @Default(0) int currentScrew,
   }) = _BedScrew;
 
   factory BedScrew.fromJson(Map<String, dynamic> json) => _$BedScrewFromJson(json);

@@ -3,6 +3,7 @@
  * All rights reserved.
  */
 
+import 'package:common/data/converters/string_double_converter.dart';
 import 'package:common/data/converters/string_integer_converter.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 
@@ -15,12 +16,14 @@ part 'config_dotstar.g.dart';
 class ConfigDotstar extends ConfigLed with _$ConfigDotstar {
   const ConfigDotstar._();
 
+  @StringIntegerConverter()
+  @StringDoubleConverter()
   @JsonSerializable(fieldRename: FieldRename.snake)
   const factory ConfigDotstar({
     required String name,
     @JsonKey(required: true) required String dataPin,
     @JsonKey(required: true) required String clockPin,
-    @StringIntegerConverter() required int chainCount,
+    required int chainCount,
     @Default(0) double initialRed,
     @Default(0) double initialGreen,
     @Default(0) double initialBlue,

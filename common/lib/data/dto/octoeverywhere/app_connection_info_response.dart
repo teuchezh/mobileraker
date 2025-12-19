@@ -33,8 +33,9 @@ part 'app_connection_info_response.g.dart';
 
 @freezed
 class AppConnectionInfoResponse with _$AppConnectionInfoResponse {
+  @StringIntegerConverter()
   const factory AppConnectionInfoResponse({
-    @StringIntegerConverter() @JsonKey(name: 'Status') required int status,
+    @JsonKey(name: 'Status') required int status,
     @JsonKey(name: 'Error') required String error,
     @JsonKey(name: 'IsUserError') required bool isUserError,
     @JsonKey(name: 'Result') required ConnectionInfoResult result,
@@ -61,20 +62,16 @@ class ConnectionInfoResult with _$ConnectionInfoResult {
 
 @freezed
 class PrinterLimits with _$PrinterLimits {
+  @StringIntegerConverter()
   const factory PrinterLimits({
-    @StringIntegerConverter()
     @JsonKey(name: 'MaxDownloadFileSizeBytes')
     required int maxDownloadFileSizeBytes,
-    @StringIntegerConverter()
     @JsonKey(name: 'MaxUploadFileSizeBytes')
     required int maxUploadFileSizeBytes,
-    @StringIntegerConverter()
     @JsonKey(name: 'MaxSingleWebcamStreamLengthSeconds')
     required int maxSingleWebcamStreamLengthSeconds,
-    @StringIntegerConverter()
     @JsonKey(name: 'MaxTotalWebcamStreamTimePerTimeWindowSeconds')
     required int? maxTotalWebcamStreamTimePerTimeWindowSeconds,
-    @StringIntegerConverter()
     @JsonKey(name: 'WebcamStreamTimeWindow')
     required int? webcamStreamTimeWindow,
   }) = _PrinterLimits;

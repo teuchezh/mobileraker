@@ -13,10 +13,11 @@ part 'layer_info.g.dart';
 
 @freezed
 class LayerInfo with _$LayerInfo {
+  @StringIntegerConverter()
   @JsonSerializable(fieldRename: FieldRename.snake)
   const factory LayerInfo({
-    @StringIntegerConverter() int? currentLayer,
-    @StringIntegerConverter() int? totalLayer,
+    int? currentLayer,
+    int? totalLayer,
   }) = _LayerInfo;
 
   factory LayerInfo.fromJson(Map<String, dynamic> json) => _$LayerInfoFromJson(json);

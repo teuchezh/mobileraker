@@ -14,9 +14,10 @@ part 'rpc_response.g.dart';
 class RpcResponse with _$RpcResponse {
   const RpcResponse._();
 
+  @StringIntegerConverter()
   const factory RpcResponse({
     required String jsonrpc,
-    @StringIntegerConverter() required int id,
+    required int id,
     required Map<String, dynamic> result,
   }) = _RpcReponse;
 
