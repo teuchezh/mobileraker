@@ -9,7 +9,6 @@ import 'package:flutter/foundation.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 
 part 'gcode_thumbnail.freezed.dart';
-
 part 'gcode_thumbnail.g.dart';
 
 // {
@@ -23,7 +22,6 @@ class GCodeThumbnail with _$GCodeThumbnail {
   const GCodeThumbnail._();
 
   @StringIntegerConverter()
-  @StringDoubleConverter()
   const factory GCodeThumbnail({
     @JsonKey(readValue: _potentiallyStringifiedIntegerToJson) required int width,
     @JsonKey(readValue: _potentiallyStringifiedIntegerToJson) required int height,
