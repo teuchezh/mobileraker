@@ -4,6 +4,10 @@
 
 ### Enhancements
 
+- **Support Force Move**: The move axis card now supports Klipper's `FORCE_MOVE` command for low-level axis diagnostics.
+  This allows advanced users to move individual steppers without kinematic constraints, boundary checks, or coordinated
+  multi-axis movement—useful for debugging mechanical issues or testing stepper response.
+
 - **Custom Load/Unload Sequences**: Users can now configure custom G-Code sequences in machine settings to execute
   during filament loading and unloading operations, replacing Mobileraker's default sequences with their own
   printer-specific commands when using the filament load/unload wizards.
