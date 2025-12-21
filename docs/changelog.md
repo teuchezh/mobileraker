@@ -8,8 +8,13 @@
   during filament loading and unloading operations, replacing Mobileraker's default sequences with their own
   printer-specific commands when using the filament load/unload wizards.
 
-- **Fab with Keyboard**: The floating action button (FAB) on the dashboard page now hides when the keyboard is open, preventing
+- **Fab with Keyboard**: The floating action button (FAB) on the dashboard page now hides when the keyboard is open,
+  preventing
   obstruction of input fields and enhancing user experience during text entry.
+
+- **Config Editor Improvements**: The configuration file editor now also uses the monospaced font for better readability
+  and
+  alignment of code, making it easier to edit configuration files directly within the app.
 
 ### Bug Fixes
 
@@ -17,6 +22,8 @@
   a value other than 1.0.
 - **Console History Color**: Fixed an issue where the console history text color for responses was not correctly set in
   light mode, resulting in poor visibility.
+- **Missing Characters**: Unified font styles across themes to prevent missing characters in certain languages, ensuring
+  all text is displayed correctly regardless of the selected language.
 
 ## [2.9.5] - 2025-11-22
 
