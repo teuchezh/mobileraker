@@ -260,7 +260,7 @@ class _CardTitle extends ConsumerWidget {
         duration: kThemeAnimationDuration,
         layoutBuilder:(child, prevChild) =>  Stack(
           alignment: Alignment.centerRight,
-          children: [...prevChild, ?child],
+          children: [...prevChild, if (child!= null) child],
         ),
         child: forceMoveEnabled ? _ForceMoveChip(key: Key('fmoveChip')) : HomedAxisChip(key: Key('homedChip'),machineUUID: machineUUID),
       ),
