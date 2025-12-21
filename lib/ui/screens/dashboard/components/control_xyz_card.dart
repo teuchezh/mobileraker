@@ -650,6 +650,8 @@ class _ControlXYZCardController extends _$ControlXYZCardController {
 
   Future<void> onHomeAxisBtn(Set<PrinterAxis> axis) {
     HapticFeedback.selectionClick().ignore();
+    // Disable force move when homing
+    state = state.whenData((data) => data.copyWith(forceMoveEnabled: false));
     return _printerService.homePrintHead(axis);
   }
 
